@@ -16,22 +16,22 @@ form.addEventListener('submit', function(event) {
     document.getElementById('infos').classList.remove('hidden');
 
     if (bmi < 18.5) {
-        description = 'Boca foi feita pra comer! Abaixo do peso!';
+        description = 'Você está abaixo do peso!';
     }   else if (bmi >= 18.5 && bmi <= 25 ) {
         description = 'Você está no peso ideal!';
         value.classList.remove('attention')
         value.classList.add('normal')
     } else if (bmi > 25 && bmi <=30) {
-        description = 'Você está acima do gordo, no caso, OBESO!'; 
+        description = 'Você está com sobrepeso!'; 
     } else if (bmi > 30 && bmi <= 35) {
-        description = 'Você está criando terremotos no Japão!';
+        description = 'Você está com obesidade!';
     } else if (bmi > 35 && bmi <= 40) {
-        description = 'Você está atrapalhando a gravidade do mundo!';
+        description = 'Você está com obesidade grau II!';
     }  else {
-        description = 'Você está com obesidade Órbita';
+        description = 'Você está com obesidade grau III ou mórbida';
     }
 
-    
+
     value.textContent = bmi.replace('.', ',');
     document.getElementById('description').textContent = description;
 });
