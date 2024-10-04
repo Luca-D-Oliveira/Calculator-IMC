@@ -153,6 +153,28 @@ body {
     color: #cbd5e1;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #18181b;
+    color: #f8fafc;
+    font-size: 0.875rem;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+}
+
+footer a {
+    color: #63ffb9;
+    text-decoration: none;
+    outline: none;
+}
+
+
 .hidden {
     display: none;
 }
